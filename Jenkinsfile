@@ -9,7 +9,7 @@ pipeline {
                 bat 'docker push omertalmi5/tests-on-grid'
                 bat 'echo "Finished push image to dockerhub"'
 
-                bat "docker-compose up --scale chrome=params.NODES_AMOUNT"
+                bat "docker-compose up --scale chrome=params.NODES_AMOUNT" 
             }
         }
     }
