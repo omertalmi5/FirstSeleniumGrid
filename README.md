@@ -1,6 +1,6 @@
 firstAutomation
-Need find th ip of the machine with ifconfig and put it in the url
-
+Need to find the ip of the machine with ifconfig and put it in the url
+Wait afer set up the infrastructure before running the tests
 1. set up the grid :
 docker-compose --file docker-compose-infra.yml  up
 
