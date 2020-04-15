@@ -22,15 +22,16 @@ public class BaseTest {
         // Default values
         // The ip is the ip of machine docker runs on
         // find it in docker toolbox with the command : docker-machine ip default
-        String host = "192.168.99.103";
+//        String host = "192.168.99.103";
         DesiredCapabilities desiredCapabilities = chrome();
 
-        if(getProperty("HUB_HOST") != null)
-        {
-            host = getProperty("HUB_HOST");
-        }
+//        if(getProperty("HUB_HOST") != null)
+//        {
+//            host = getProperty("HUB_HOST");
+//        }
 
-        String completeUrl = "http://" + host + ":4444/wd/hub";
+        String completeUrl = "http://192.168.122.1:4444/wd/hub";
+//        String completeUrl = "http://localhost:4444/wd/hub";
 
         this.driver = new RemoteWebDriver(new URL(completeUrl), desiredCapabilities);
     }
