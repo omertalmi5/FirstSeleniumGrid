@@ -10,8 +10,3 @@ services:
       - hub
     environment:
       - HUB_HOST=hub
-  tests:
-    image: omertalmi5/tests-on-grid
-    depends_on:
-      - hub
-      - chrome
